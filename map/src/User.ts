@@ -1,11 +1,9 @@
 import faker from "faker";
+import { Location } from "./CustomMap";
 
 export class User {
-  name: string;
-  location: {
-    lat: number;
-    lng: number;
-  };
+  public name: string;
+  public location: Location;
 
   constructor() {
     this.name = faker.name.lastName();

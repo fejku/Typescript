@@ -1,16 +1,14 @@
 import faker from "faker";
+import { Location } from "./CustomMap";
 
 export class Company {
-  companyName: string;
-  catchingPhrase: string;
-  location: {
-    lat: number;
-    lng: number;
-  };
+  public companyName: string;
+  public catchPhrase: string;
+  public location: Location;
 
   constructor() {
     this.companyName = faker.company.companyName();
-    this.catchingPhrase = faker.company.catchPhrase();
+    this.catchPhrase = faker.company.catchPhrase();
     this.location = {
       lat: parseFloat(faker.address.latitude()),
       lng: parseFloat(faker.address.longitude()),
