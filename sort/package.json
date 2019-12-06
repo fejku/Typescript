@@ -1,0 +1,16 @@
+{
+  "name": "sort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.1",
+    "ts-node": "^8.5.4"
+  },
+  "dependencies": {}
+}
